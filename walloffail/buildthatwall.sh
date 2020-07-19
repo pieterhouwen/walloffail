@@ -4,13 +4,13 @@ echo BUILDING THAT WALL!!
 echo And make the hackers pay for it!
 lastupdated=$(date)
 echo Update lists. . .
-/opt/zooi/walloffail/modules/updatelists.sh
-art32=$(bash /opt/zooi/walloffail/modules/art32.sh)
+$(PWD)/modules/updatelists.sh
+art32=$(bash $(pwd)/modules/art32.sh)
 top30names=$(cat /opt/zooi/networkoutput/master-user-list | head -n 30)
 # sed ':a;N;$!ba;s/\n/\<br\>/g'
 spiders=$(cat /var/log/nginx/access.log | grep -i spider | cut -d ] -f2 | tail -n30)
-isps=$(sort -u /opt/zooi/networkoutput/masterisptable)
-ispsnumberd=$(cat /opt/zooi/networkoutput/masteriptable-numberd)
+isps=$(sort -u $(pwd)/networkoutput/masterisptable)
+ispsnumberd=$(#(pwd)/networkoutput/masteriptable-numberd)
 echo Done!
 cat <<EOF >/opt/zooi/walloffail/walloffail.html
 <!DOCTYPE html>
