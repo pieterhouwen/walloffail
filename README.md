@@ -5,4 +5,3 @@ This is a project to demonstrate what happens when you leave your SSH on your de
 
 # TODO:
 - Add list of wacky requests sent to the HTTP(S) port.
-- test
