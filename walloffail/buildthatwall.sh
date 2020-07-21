@@ -4,7 +4,7 @@ echo BUILDING THAT WALL!!
 echo And make the hackers pay for it!
 lastupdated=$(date)
 echo Update lists. . .
-$(PWD)/modules/updatelists.sh
+$(pwd)/modules/updatelists.sh
 art32=$(bash $(pwd)/modules/art32.sh)
 top30names=$(cat /opt/zooi/networkoutput/master-user-list | head -n 30)
 # sed ':a;N;$!ba;s/\n/\<br\>/g'
@@ -50,11 +50,11 @@ cat <<EOF >/opt/zooi/walloffail/walloffail.html
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#attempts">Total amount of Mexican attempts</a></li>
+                <li><a href="#attempts">Total amount of attempts</a></li>
                 <li><a href="#top30">Top 30 used accounts</a></li>
                 <li><a href="#isps">Invading ISP's</a></li>
                 <li><a href="#spiders">Last 30 Spiders</a></li>
-                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#requests">Wacky requests</a></li>
             </ul>
         </div>
         <!--/.nav-collapse -->
@@ -76,7 +76,7 @@ The hackers paid for it!
     </div>
     <div class="container">
         <section id="attempts">
-            <div style="text-align:left"><h2>Total amount of Mexican attempts </h2></div>
+            <div style="text-align:left"><h2>Total amount of attempts </h2></div>
             <p>
 		$art32
             </p>
@@ -113,8 +113,8 @@ $ispsnumberd
         </section>
     </div>
     <div class="container">
-        <section id="downloads">
-            <div style="text-align:left"><h2>Downloads</h2></div>
+        <section id="requests">
+            <div style="text-align:left"><h2>Wacky requests</h2></div>
 			<p>
 
 			</p>
