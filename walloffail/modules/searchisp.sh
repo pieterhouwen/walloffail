@@ -1,4 +1,5 @@
 #!/bin/bash
+# DO NOT USE THIS SCRIPT, THIS WILL GET YOU BANNED FROM WHOIS
 echo Removing old masterisptable...
 rm /opt/zooi/networkoutput/masterisptable
 echo Beginning whois loop.
